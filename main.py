@@ -34,7 +34,6 @@ with open("Evolutie.txt", "w") as fout:
         istoric_maxim.append(fitness_maxim)
 
         if generatie == 0:
-            fout.write("Populatia initiala\n")
             for i, cromozom in enumerate(populatie):
                 binar = bin(cromozom)[2:].rjust(biti, '0')
                 x_str = format_x(decodificat[i])
